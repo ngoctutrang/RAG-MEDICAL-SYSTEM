@@ -5,15 +5,17 @@ from app.common.custom_exception import CustomException
 
 logger = get_logger(__name__)
 
-def get_embeddings():
+def get_embedding_model():
     try:
-        logger.info("Initializing HuggingFace embeddings")
-        embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
-            model_kwargs={"device": "cpu"}  # tránh lỗi GPU
-        )
-        logger.info("HuggingFace embeddings initialized successfully")
-        return embeddings
+        logger.info("Intializing our Huggingface embedding model")
+
+        model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+        logger.info("Huggingface embedding model loaded sucesfully....")
+
+        return model
+    
     except Exception as e:
-        logger.error(f"Error initializing HuggingFace embeddings: {e}")
-        raise CustomException(f"Failed to initialize embeddings: {e}")
+        error_message=CustomException("Error occured while loading embedding model" , e)
+        logger.error(str(error_message))
+        raise error_message

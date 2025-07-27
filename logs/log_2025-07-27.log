@@ -1,92 +1,293 @@
-2025-07-27 16:44:51,803 - INFO - Starting PDF processing and vector store creation
-2025-07-27 16:44:51,803 - INFO - Loading PDF files from data/
-2025-07-27 16:44:51,807 - ERROR - Error loading file data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf
-2025-07-27 16:44:51,807 - ERROR - Error loading PDF files: pymupdf package not found, please install it with `pip install pymupdf`
-2025-07-27 16:44:51,807 - WARNING - No PDF files found to process.
-2025-07-27 16:44:51,807 - ERROR - Error in process_and_store_pdfs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line
-2025-07-27 16:44:51,807 - ERROR - Custom exception occurred: Failed to process PDFs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/./app/components/data_loader.py | Line: 20
-2025-07-27 16:56:34,408 - INFO - Starting PDF processing and vector store creation
-2025-07-27 16:56:34,408 - INFO - Loading PDF files from data/
-2025-07-27 16:56:34,412 - ERROR - Error loading file data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf
-2025-07-27 16:56:34,412 - ERROR - Error loading PDF files: pymupdf package not found, please install it with `pip install pymupdf`
-2025-07-27 16:56:34,412 - WARNING - No PDF files found to process.
-2025-07-27 16:56:34,412 - ERROR - Error in process_and_store_pdfs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line
-2025-07-27 16:56:34,412 - ERROR - Custom exception occurred: Failed to process PDFs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/data_loader.py | Line: 20
-2025-07-27 16:58:58,347 - INFO - Starting PDF processing and vector store creation
-2025-07-27 16:58:58,348 - INFO - Loading PDF files from data/
-2025-07-27 16:59:01,353 - INFO - Loaded 759 PDF files.
-2025-07-27 16:59:01,353 - INFO - Splitting documents into chunks
-2025-07-27 16:59:01,580 - INFO - Split documents into 7077 chunks.
-2025-07-27 16:59:01,580 - INFO - Loading FAISS vector store
-2025-07-27 16:59:01,580 - INFO - Initializing HuggingFace embeddings
-2025-07-27 16:59:01,580 - ERROR - Error initializing HuggingFace embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
-2025-07-27 16:59:01,580 - ERROR - Error loading FAISS vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
-2025-07-27 16:59:01,580 - INFO - Creating FAISS vector store
-2025-07-27 16:59:01,580 - INFO - Initializing HuggingFace embeddings
-2025-07-27 16:59:01,580 - ERROR - Error initializing HuggingFace embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
-2025-07-27 16:59:01,580 - ERROR - Error saving FAISS vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
-2025-07-27 16:59:01,580 - ERROR - Error in process_and_store_pdfs: Failed to save vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39
-2025-07-27 16:59:01,581 - ERROR - Custom exception occurred: Failed to process PDFs: Failed to save vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/./app/components/data_loader.py | Line: 31
-2025-07-27 17:18:09,879 - INFO - Starting PDF processing and vector store creation
-2025-07-27 17:18:09,879 - INFO - Loading PDF files from data/
-2025-07-27 17:18:12,936 - INFO - Loaded 759 PDF files.
-2025-07-27 17:18:12,936 - INFO - Splitting documents into chunks
-2025-07-27 17:18:13,166 - INFO - Split documents into 7077 chunks.
-2025-07-27 17:18:13,166 - INFO - Loading FAISS vector store
-2025-07-27 17:18:13,167 - INFO - Initializing HuggingFace embeddings
-2025-07-27 17:18:53,993 - INFO - Use pytorch device_name: cuda:0
-2025-07-27 17:18:53,993 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-07-27 17:19:23,644 - ERROR - Error initializing HuggingFace embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
-
-2025-07-27 17:19:23,644 - ERROR - Error loading FAISS vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
- | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
-2025-07-27 17:19:23,652 - INFO - Creating FAISS vector store
-2025-07-27 17:19:23,652 - INFO - Initializing HuggingFace embeddings
-2025-07-27 17:19:23,653 - INFO - Use pytorch device_name: cuda:0
-2025-07-27 17:19:23,653 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-07-27 17:19:27,629 - ERROR - Error initializing HuggingFace embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
-
-2025-07-27 17:19:27,629 - ERROR - Error saving FAISS vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
- | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
-2025-07-27 17:19:27,629 - ERROR - Error in process_and_store_pdfs: Failed to save vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
- | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39
-2025-07-27 17:19:27,629 - ERROR - Custom exception occurred: Failed to process PDFs: Failed to save vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
-CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
-For debugging consider passing CUDA_LAUNCH_BLOCKING=1
-Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
- | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/./app/components/data_loader.py | Line: 31
-2025-07-27 17:28:30,488 - INFO - Starting PDF processing and vector store creation
-2025-07-27 17:28:30,488 - INFO - Loading PDF files from data/
-2025-07-27 17:28:32,896 - INFO - Loaded 759 PDF files.
-2025-07-27 17:28:32,896 - INFO - Splitting documents into chunks
-2025-07-27 17:28:33,126 - INFO - Split documents into 7077 chunks.
-2025-07-27 17:28:33,126 - INFO - Loading FAISS vector store
-2025-07-27 17:28:33,126 - INFO - Initializing HuggingFace embeddings
-2025-07-27 17:28:38,183 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-07-27 17:28:42,930 - INFO - HuggingFace embeddings initialized successfully
-2025-07-27 17:28:42,931 - WARNING - FAISS vector store not found at vector_store/db_faiss. Returning None.
-2025-07-27 17:28:42,931 - INFO - Creating FAISS vector store
-2025-07-27 17:28:42,931 - INFO - Initializing HuggingFace embeddings
-2025-07-27 17:28:42,931 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
-2025-07-27 17:28:46,458 - INFO - HuggingFace embeddings initialized successfully
-2025-07-27 17:37:11,932 - INFO - Loading faiss.
-2025-07-27 17:37:12,349 - INFO - Successfully loaded faiss.
-2025-07-27 17:37:12,386 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
-2025-07-27 17:37:12,664 - INFO - FAISS vector store saved to vector_store/db_faiss
-2025-07-27 17:37:12,665 - INFO - PDF processing and vector store creation completed successfully
-2025-07-27 17:37:12,667 - INFO - Vector store created successfully.
+2025-07-27 20:05:46,525 - INFO - 127.0.0.1 - - [27/Jul/2025 20:05:46] "GET / HTTP/1.1" 200 -
+2025-07-27 20:05:59,117 - INFO - Loading vector store for context
+2025-07-27 20:05:59,117 - INFO - Loading FAISS vector store
+2025-07-27 20:05:59,117 - INFO - Initializing HuggingFace embeddings
+2025-07-27 20:05:59,117 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:06:03,668 - INFO - HuggingFace embeddings initialized successfully
+2025-07-27 20:06:03,669 - INFO - FAISS vector store found at vector_store/db_faiss
+2025-07-27 20:06:03,850 - INFO - Initializing HuggingFace LLM
+2025-07-27 20:06:04,185 - ERROR - Error initializing HuggingFace LLM: 1 validation error for HuggingFaceHub
+  Value error, Got invalid task None, currently only dict_keys(['translation', 'summarization', 'conversational', 'text-generation', 'text2text-generation']) are supported [type=value_error, input_value={'repo_id': 'mistralai/Mi...nt': None, 'task': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-07-27 20:06:04,185 - ERROR - Failed to make a QA chain | Error: Failed to initialize LLM: 1 validation error for HuggingFaceHub
+  Value error, Got invalid task None, currently only dict_keys(['translation', 'summarization', 'conversational', 'text-generation', 'text2text-generation']) are supported [type=value_error, input_value={'repo_id': 'mistralai/Mi...nt': None, 'task': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/llm.py | Line: 12 | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/retriever.py | Line: 36
+2025-07-27 20:06:04,189 - INFO - 127.0.0.1 - - [27/Jul/2025 20:06:04] "POST / HTTP/1.1" 200 -
+2025-07-27 20:10:33,519 - INFO - MAking the vectorstore....
+2025-07-27 20:10:33,520 - INFO - Loading files from data/
+2025-07-27 20:10:53,011 - INFO - Sucesfully fetched 759 documents
+2025-07-27 20:10:53,011 - INFO - Splitting 759 documents into chunks
+2025-07-27 20:10:53,224 - INFO - Generated 7080 text chunks
+2025-07-27 20:10:53,224 - INFO - Generating your new vectorstore
+2025-07-27 20:10:53,224 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:10:58,433 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:10:58,433 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:11:02,808 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:19:19,928 - INFO - Loading faiss.
+2025-07-27 20:19:19,964 - INFO - Successfully loaded faiss.
+2025-07-27 20:19:19,968 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:19:20,381 - INFO - Saving vectorstoree
+2025-07-27 20:19:20,422 - INFO - Vectostore saved sucesfulyy...
+2025-07-27 20:19:20,424 - INFO - Vectorstore created sucesfully....
+2025-07-27 20:19:34,719 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:19:34,719 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:19:45,247 - INFO - 127.0.0.1 - - [27/Jul/2025 20:19:45] "GET / HTTP/1.1" 200 -
+2025-07-27 20:19:59,601 - INFO - Loading vector store for context
+2025-07-27 20:19:59,601 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:20:04,714 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:20:04,714 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:20:09,650 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:20:09,650 - INFO - Loading existing vectorstore...
+2025-07-27 20:20:09,651 - INFO - Loading faiss.
+2025-07-27 20:20:09,674 - INFO - Successfully loaded faiss.
+2025-07-27 20:20:09,679 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:20:09,734 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:20:09,871 - INFO - LLM loaded sucesfully...
+2025-07-27 20:20:09,871 - INFO - Sucesfully created the QA chain
+2025-07-27 20:20:10,237 - INFO - 127.0.0.1 - - [27/Jul/2025 20:20:10] "POST / HTTP/1.1" 200 -
+2025-07-27 20:24:10,927 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:24:10,928 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:24:30,001 - INFO - Loading vector store for context
+2025-07-27 20:24:30,001 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:24:34,851 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:24:34,851 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:24:39,087 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:24:39,087 - INFO - Loading existing vectorstore...
+2025-07-27 20:24:39,088 - INFO - Loading faiss.
+2025-07-27 20:24:39,106 - INFO - Successfully loaded faiss.
+2025-07-27 20:24:39,110 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:24:39,159 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:24:39,244 - INFO - LLM loaded sucesfully...
+2025-07-27 20:24:39,245 - INFO - Sucesfully created the QA chain
+2025-07-27 20:24:39,577 - INFO - 127.0.0.1 - - [27/Jul/2025 20:24:39] "POST / HTTP/1.1" 200 -
+2025-07-27 20:24:47,023 - INFO - 127.0.0.1 - - [27/Jul/2025 20:24:47] "GET / HTTP/1.1" 200 -
+2025-07-27 20:25:00,841 - INFO - Loading vector store for context
+2025-07-27 20:25:00,841 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:25:00,842 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:25:00,842 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:25:04,686 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:25:04,686 - INFO - Loading existing vectorstore...
+2025-07-27 20:25:04,869 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:25:04,870 - INFO - LLM loaded sucesfully...
+2025-07-27 20:25:04,870 - INFO - Sucesfully created the QA chain
+2025-07-27 20:25:04,892 - INFO - 127.0.0.1 - - [27/Jul/2025 20:25:04] "POST / HTTP/1.1" 200 -
+2025-07-27 20:25:27,435 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:25:27,435 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:26:51,576 - INFO - Loading vector store for context
+2025-07-27 20:26:51,576 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:26:56,590 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:26:56,590 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:27:00,842 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:27:00,842 - INFO - Loading existing vectorstore...
+2025-07-27 20:27:00,843 - INFO - Loading faiss.
+2025-07-27 20:27:00,861 - INFO - Successfully loaded faiss.
+2025-07-27 20:27:00,866 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:27:00,915 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:27:00,999 - INFO - LLM loaded sucesfully...
+2025-07-27 20:27:01,000 - INFO - Sucesfully created the QA chain
+2025-07-27 20:27:01,315 - INFO - 127.0.0.1 - - [27/Jul/2025 20:27:01] "POST / HTTP/1.1" 200 -
+2025-07-27 20:27:32,887 - INFO - Loading vector store for context
+2025-07-27 20:27:32,888 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:27:32,888 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:27:32,888 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:27:36,604 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:27:36,604 - INFO - Loading existing vectorstore...
+2025-07-27 20:27:36,785 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:27:36,786 - INFO - LLM loaded sucesfully...
+2025-07-27 20:27:36,786 - INFO - Sucesfully created the QA chain
+2025-07-27 20:27:36,807 - INFO - 127.0.0.1 - - [27/Jul/2025 20:27:36] "POST / HTTP/1.1" 200 -
+2025-07-27 20:27:39,391 - INFO - 127.0.0.1 - - [27/Jul/2025 20:27:39] "[32mGET /clear HTTP/1.1[0m" 302 -
+2025-07-27 20:27:39,396 - INFO - 127.0.0.1 - - [27/Jul/2025 20:27:39] "GET / HTTP/1.1" 200 -
+2025-07-27 20:27:49,367 - INFO - Loading vector store for context
+2025-07-27 20:27:49,367 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:27:49,368 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:27:49,368 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:27:54,151 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:27:54,151 - INFO - Loading existing vectorstore...
+2025-07-27 20:27:54,188 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:27:54,189 - INFO - LLM loaded sucesfully...
+2025-07-27 20:27:54,189 - INFO - Sucesfully created the QA chain
+2025-07-27 20:27:54,211 - INFO - 127.0.0.1 - - [27/Jul/2025 20:27:54] "POST / HTTP/1.1" 200 -
+2025-07-27 20:34:13,778 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:34:13,778 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:34:19,558 - INFO - 127.0.0.1 - - [27/Jul/2025 20:34:19] "[32mGET /clear HTTP/1.1[0m" 302 -
+2025-07-27 20:34:19,568 - INFO - 127.0.0.1 - - [27/Jul/2025 20:34:19] "GET / HTTP/1.1" 200 -
+2025-07-27 20:34:26,987 - INFO - 127.0.0.1 - - [27/Jul/2025 20:34:26] "GET / HTTP/1.1" 200 -
+2025-07-27 20:34:39,317 - INFO - Loading vector store for context
+2025-07-27 20:34:39,317 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:34:44,309 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:34:44,310 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:34:49,320 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:34:49,320 - INFO - Loading existing vectorstore...
+2025-07-27 20:34:49,321 - INFO - Loading faiss.
+2025-07-27 20:34:49,340 - INFO - Successfully loaded faiss.
+2025-07-27 20:34:49,345 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:34:49,394 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:34:49,478 - INFO - LLM loaded successfully.
+2025-07-27 20:34:49,478 - INFO - Sucesfully created the QA chain
+2025-07-27 20:34:49,890 - INFO - 127.0.0.1 - - [27/Jul/2025 20:34:49] "POST / HTTP/1.1" 200 -
+2025-07-27 20:37:42,779 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:37:42,779 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:37:47,448 - INFO - Loading vector store for context
+2025-07-27 20:37:47,448 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:37:52,409 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:37:52,409 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:37:56,600 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:37:56,600 - INFO - Loading existing vectorstore...
+2025-07-27 20:37:56,601 - INFO - Loading faiss.
+2025-07-27 20:37:56,620 - INFO - Successfully loaded faiss.
+2025-07-27 20:37:56,624 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:37:56,674 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:37:56,759 - INFO - LLM loaded sucesfully...
+2025-07-27 20:37:56,759 - INFO - Sucesfully created the QA chain
+2025-07-27 20:37:57,073 - INFO - 127.0.0.1 - - [27/Jul/2025 20:37:57] "POST / HTTP/1.1" 200 -
+2025-07-27 20:46:20,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:46:20,049 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:46:33,095 - INFO - Loading vector store for context
+2025-07-27 20:46:33,095 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:46:37,957 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:46:37,958 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:46:42,043 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:46:42,044 - INFO - Loading existing vectorstore...
+2025-07-27 20:46:42,045 - INFO - Loading faiss.
+2025-07-27 20:46:42,063 - INFO - Successfully loaded faiss.
+2025-07-27 20:46:42,067 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:46:42,112 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:46:42,198 - INFO - LLM loaded sucesfully...
+2025-07-27 20:46:42,198 - INFO - Sucesfully created the QA chain
+2025-07-27 20:46:42,506 - INFO - 127.0.0.1 - - [27/Jul/2025 20:46:42] "POST / HTTP/1.1" 200 -
+2025-07-27 20:46:56,462 - INFO - 127.0.0.1 - - [27/Jul/2025 20:46:56] "[32mGET /clear HTTP/1.1[0m" 302 -
+2025-07-27 20:46:56,466 - INFO - 127.0.0.1 - - [27/Jul/2025 20:46:56] "GET / HTTP/1.1" 200 -
+2025-07-27 20:46:59,776 - INFO - 127.0.0.1 - - [27/Jul/2025 20:46:59] "GET / HTTP/1.1" 200 -
+2025-07-27 20:47:09,830 - INFO - Loading vector store for context
+2025-07-27 20:47:09,830 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:47:09,831 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:47:09,831 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:47:13,501 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:47:13,502 - INFO - Loading existing vectorstore...
+2025-07-27 20:47:13,674 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:47:13,675 - INFO - LLM loaded sucesfully...
+2025-07-27 20:47:13,675 - INFO - Sucesfully created the QA chain
+2025-07-27 20:47:13,696 - INFO - 127.0.0.1 - - [27/Jul/2025 20:47:13] "POST / HTTP/1.1" 200 -
+2025-07-27 20:51:37,753 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:51:37,754 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:51:44,458 - INFO - 127.0.0.1 - - [27/Jul/2025 20:51:44] "GET / HTTP/1.1" 200 -
+2025-07-27 20:51:52,331 - INFO - Loading vector store for context
+2025-07-27 20:51:52,331 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:51:58,919 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:51:58,919 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:52:03,279 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:52:03,279 - INFO - Loading existing vectorstore...
+2025-07-27 20:52:03,280 - INFO - Loading faiss.
+2025-07-27 20:52:03,297 - INFO - Successfully loaded faiss.
+2025-07-27 20:52:03,301 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:52:03,348 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:52:03,523 - INFO - LLM loaded sucesfully...
+2025-07-27 20:52:03,523 - ERROR - Failed to make a QA chain | Error: "RetrievalQA" object has no field "invoke" | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/retriever.py | Line: 57
+2025-07-27 20:52:03,528 - INFO - 127.0.0.1 - - [27/Jul/2025 20:52:03] "POST / HTTP/1.1" 200 -
+2025-07-27 20:53:43,123 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:53:43,123 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:53:46,636 - INFO - 127.0.0.1 - - [27/Jul/2025 20:53:46] "[32mGET /clear HTTP/1.1[0m" 302 -
+2025-07-27 20:53:46,645 - INFO - 127.0.0.1 - - [27/Jul/2025 20:53:46] "GET / HTTP/1.1" 200 -
+2025-07-27 20:53:47,960 - INFO - 127.0.0.1 - - [27/Jul/2025 20:53:47] "GET / HTTP/1.1" 200 -
+2025-07-27 20:53:57,562 - INFO - Loading vector store for context
+2025-07-27 20:53:57,562 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:54:02,458 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:54:02,458 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:54:06,797 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:54:06,797 - INFO - Loading existing vectorstore...
+2025-07-27 20:54:06,798 - INFO - Loading faiss.
+2025-07-27 20:54:06,816 - INFO - Successfully loaded faiss.
+2025-07-27 20:54:06,821 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:54:06,869 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:54:06,965 - INFO - LLM loaded sucesfully...
+2025-07-27 20:54:06,966 - ERROR - Failed to make a QA chain | Error: "RetrievalQA" object has no field "invoke" | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/retriever.py | Line: 57
+2025-07-27 20:54:06,969 - INFO - 127.0.0.1 - - [27/Jul/2025 20:54:06] "POST / HTTP/1.1" 200 -
+2025-07-27 20:55:43,449 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:55:43,449 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:55:46,187 - INFO - 127.0.0.1 - - [27/Jul/2025 20:55:46] "[32mGET /clear HTTP/1.1[0m" 302 -
+2025-07-27 20:55:46,198 - INFO - 127.0.0.1 - - [27/Jul/2025 20:55:46] "GET / HTTP/1.1" 200 -
+2025-07-27 20:55:47,364 - INFO - 127.0.0.1 - - [27/Jul/2025 20:55:47] "GET / HTTP/1.1" 200 -
+2025-07-27 20:55:54,954 - INFO - Loading vector store for context
+2025-07-27 20:55:54,954 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:55:59,936 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:55:59,936 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:56:04,764 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:56:04,764 - INFO - Loading existing vectorstore...
+2025-07-27 20:56:04,765 - INFO - Loading faiss.
+2025-07-27 20:56:04,784 - INFO - Successfully loaded faiss.
+2025-07-27 20:56:04,788 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:56:04,838 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:56:04,937 - INFO - LLM loaded sucesfully...
+2025-07-27 20:56:04,938 - INFO - Sucesfully created the QA chain
+2025-07-27 20:56:04,942 - INFO - 127.0.0.1 - - [27/Jul/2025 20:56:04] "POST / HTTP/1.1" 200 -
+2025-07-27 20:58:06,935 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 20:58:06,935 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 20:58:09,052 - INFO - 127.0.0.1 - - [27/Jul/2025 20:58:09] "[32mGET /clear HTTP/1.1[0m" 302 -
+2025-07-27 20:58:09,062 - INFO - 127.0.0.1 - - [27/Jul/2025 20:58:09] "GET / HTTP/1.1" 200 -
+2025-07-27 20:58:10,309 - INFO - 127.0.0.1 - - [27/Jul/2025 20:58:10] "GET / HTTP/1.1" 200 -
+2025-07-27 20:58:18,395 - INFO - Loading vector store for context
+2025-07-27 20:58:18,395 - INFO - Intializing our Huggingface embedding model
+2025-07-27 20:58:23,304 - INFO - Use pytorch device_name: cpu
+2025-07-27 20:58:23,305 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 20:58:28,186 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 20:58:28,186 - INFO - Loading existing vectorstore...
+2025-07-27 20:58:28,188 - INFO - Loading faiss.
+2025-07-27 20:58:28,208 - INFO - Successfully loaded faiss.
+2025-07-27 20:58:28,213 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 20:58:28,262 - INFO - Loading LLM from HuggingFace
+2025-07-27 20:58:28,359 - INFO - LLM loaded sucesfully...
+2025-07-27 20:58:28,360 - INFO - Sucesfully created the QA chain
+2025-07-27 20:58:29,915 - INFO - 127.0.0.1 - - [27/Jul/2025 20:58:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-27 20:58:29,919 - INFO - 127.0.0.1 - - [27/Jul/2025 20:58:29] "GET / HTTP/1.1" 200 -
+2025-07-27 21:35:28,496 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 21:35:28,496 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 21:35:48,950 - INFO - 127.0.0.1 - - [27/Jul/2025 21:35:48] "GET / HTTP/1.1" 200 -
+2025-07-27 21:35:49,152 - INFO - 127.0.0.1 - - [27/Jul/2025 21:35:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-27 21:35:59,555 - INFO - Loading vector store for context
+2025-07-27 21:35:59,555 - INFO - Intializing our Huggingface embedding model
+2025-07-27 21:36:04,252 - INFO - Use pytorch device_name: cpu
+2025-07-27 21:36:04,252 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 21:36:08,581 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 21:36:08,581 - INFO - Loading existing vectorstore...
+2025-07-27 21:36:08,584 - INFO - Loading faiss.
+2025-07-27 21:36:08,620 - INFO - Successfully loaded faiss.
+2025-07-27 21:36:08,627 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 21:36:08,689 - INFO - Loading LLM from HuggingFace
+2025-07-27 21:36:08,782 - INFO - LLM loaded sucesfully...
+2025-07-27 21:36:08,783 - INFO - Sucesfully created the QA chain
+2025-07-27 21:36:10,578 - INFO - 127.0.0.1 - - [27/Jul/2025 21:36:10] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-27 21:36:10,583 - INFO - 127.0.0.1 - - [27/Jul/2025 21:36:10] "GET / HTTP/1.1" 200 -
