@@ -5,7 +5,7 @@ from app.components.embeddings import get_embeddings
 from app.common.logger import get_logger
 from app.common.custom_exception import CustomException
 
-from app.config import DB_FAISS_PATH
+from app.config.config import DB_FAISS_PATH
 
 import os
 

@@ -1,0 +1,92 @@
+2025-07-27 16:44:51,803 - INFO - Starting PDF processing and vector store creation
+2025-07-27 16:44:51,803 - INFO - Loading PDF files from data/
+2025-07-27 16:44:51,807 - ERROR - Error loading file data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf
+2025-07-27 16:44:51,807 - ERROR - Error loading PDF files: pymupdf package not found, please install it with `pip install pymupdf`
+2025-07-27 16:44:51,807 - WARNING - No PDF files found to process.
+2025-07-27 16:44:51,807 - ERROR - Error in process_and_store_pdfs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line
+2025-07-27 16:44:51,807 - ERROR - Custom exception occurred: Failed to process PDFs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/./app/components/data_loader.py | Line: 20
+2025-07-27 16:56:34,408 - INFO - Starting PDF processing and vector store creation
+2025-07-27 16:56:34,408 - INFO - Loading PDF files from data/
+2025-07-27 16:56:34,412 - ERROR - Error loading file data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf
+2025-07-27 16:56:34,412 - ERROR - Error loading PDF files: pymupdf package not found, please install it with `pip install pymupdf`
+2025-07-27 16:56:34,412 - WARNING - No PDF files found to process.
+2025-07-27 16:56:34,412 - ERROR - Error in process_and_store_pdfs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line
+2025-07-27 16:56:34,412 - ERROR - Custom exception occurred: Failed to process PDFs: No PDF files found. | Error: None | File: Unknown File | Line: Unknown Line | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/data_loader.py | Line: 20
+2025-07-27 16:58:58,347 - INFO - Starting PDF processing and vector store creation
+2025-07-27 16:58:58,348 - INFO - Loading PDF files from data/
+2025-07-27 16:59:01,353 - INFO - Loaded 759 PDF files.
+2025-07-27 16:59:01,353 - INFO - Splitting documents into chunks
+2025-07-27 16:59:01,580 - INFO - Split documents into 7077 chunks.
+2025-07-27 16:59:01,580 - INFO - Loading FAISS vector store
+2025-07-27 16:59:01,580 - INFO - Initializing HuggingFace embeddings
+2025-07-27 16:59:01,580 - ERROR - Error initializing HuggingFace embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2025-07-27 16:59:01,580 - ERROR - Error loading FAISS vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
+2025-07-27 16:59:01,580 - INFO - Creating FAISS vector store
+2025-07-27 16:59:01,580 - INFO - Initializing HuggingFace embeddings
+2025-07-27 16:59:01,580 - ERROR - Error initializing HuggingFace embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2025-07-27 16:59:01,580 - ERROR - Error saving FAISS vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
+2025-07-27 16:59:01,580 - ERROR - Error in process_and_store_pdfs: Failed to save vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39
+2025-07-27 16:59:01,581 - ERROR - Custom exception occurred: Failed to process PDFs: Failed to save vector store: Failed to initialize embeddings: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/./app/components/data_loader.py | Line: 31
+2025-07-27 17:18:09,879 - INFO - Starting PDF processing and vector store creation
+2025-07-27 17:18:09,879 - INFO - Loading PDF files from data/
+2025-07-27 17:18:12,936 - INFO - Loaded 759 PDF files.
+2025-07-27 17:18:12,936 - INFO - Splitting documents into chunks
+2025-07-27 17:18:13,166 - INFO - Split documents into 7077 chunks.
+2025-07-27 17:18:13,166 - INFO - Loading FAISS vector store
+2025-07-27 17:18:13,167 - INFO - Initializing HuggingFace embeddings
+2025-07-27 17:18:53,993 - INFO - Use pytorch device_name: cuda:0
+2025-07-27 17:18:53,993 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 17:19:23,644 - ERROR - Error initializing HuggingFace embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-07-27 17:19:23,644 - ERROR - Error loading FAISS vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+ | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
+2025-07-27 17:19:23,652 - INFO - Creating FAISS vector store
+2025-07-27 17:19:23,652 - INFO - Initializing HuggingFace embeddings
+2025-07-27 17:19:23,653 - INFO - Use pytorch device_name: cuda:0
+2025-07-27 17:19:23,653 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 17:19:27,629 - ERROR - Error initializing HuggingFace embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-07-27 17:19:27,629 - ERROR - Error saving FAISS vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+ | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11
+2025-07-27 17:19:27,629 - ERROR - Error in process_and_store_pdfs: Failed to save vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+ | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39
+2025-07-27 17:19:27,629 - ERROR - Custom exception occurred: Failed to process PDFs: Failed to save vector store: Failed to initialize embeddings: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+ | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/embeddings.py | Line: 11 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/app/components/vector_store.py | Line: 39 | Error: None | File: /media/do-ngoc-tu/Data2/AI/LLMOP/RAG Medical Chatbot/./app/components/data_loader.py | Line: 31
+2025-07-27 17:28:30,488 - INFO - Starting PDF processing and vector store creation
+2025-07-27 17:28:30,488 - INFO - Loading PDF files from data/
+2025-07-27 17:28:32,896 - INFO - Loaded 759 PDF files.
+2025-07-27 17:28:32,896 - INFO - Splitting documents into chunks
+2025-07-27 17:28:33,126 - INFO - Split documents into 7077 chunks.
+2025-07-27 17:28:33,126 - INFO - Loading FAISS vector store
+2025-07-27 17:28:33,126 - INFO - Initializing HuggingFace embeddings
+2025-07-27 17:28:38,183 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 17:28:42,930 - INFO - HuggingFace embeddings initialized successfully
+2025-07-27 17:28:42,931 - WARNING - FAISS vector store not found at vector_store/db_faiss. Returning None.
+2025-07-27 17:28:42,931 - INFO - Creating FAISS vector store
+2025-07-27 17:28:42,931 - INFO - Initializing HuggingFace embeddings
+2025-07-27 17:28:42,931 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 17:28:46,458 - INFO - HuggingFace embeddings initialized successfully
+2025-07-27 17:37:11,932 - INFO - Loading faiss.
+2025-07-27 17:37:12,349 - INFO - Successfully loaded faiss.
+2025-07-27 17:37:12,386 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 17:37:12,664 - INFO - FAISS vector store saved to vector_store/db_faiss
+2025-07-27 17:37:12,665 - INFO - PDF processing and vector store creation completed successfully
+2025-07-27 17:37:12,667 - INFO - Vector store created successfully.

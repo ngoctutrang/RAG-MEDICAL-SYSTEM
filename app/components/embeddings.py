@@ -9,7 +9,8 @@ def get_embeddings():
     try:
         logger.info("Initializing HuggingFace embeddings")
         embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
+            model_name="sentence-transformers/all-MiniLM-L6-v2",
+            model_kwargs={"device": "cpu"}  # tránh lỗi GPU
         )
         logger.info("HuggingFace embeddings initialized successfully")
         return embeddings
