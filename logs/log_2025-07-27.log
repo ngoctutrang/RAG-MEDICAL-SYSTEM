@@ -291,3 +291,23 @@
 2025-07-27 21:36:08,783 - INFO - Sucesfully created the QA chain
 2025-07-27 21:36:10,578 - INFO - 127.0.0.1 - - [27/Jul/2025 21:36:10] "[32mPOST / HTTP/1.1[0m" 302 -
 2025-07-27 21:36:10,583 - INFO - 127.0.0.1 - - [27/Jul/2025 21:36:10] "GET / HTTP/1.1" 200 -
+2025-07-27 21:47:37,017 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+2025-07-27 21:47:37,017 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-27 21:47:43,365 - INFO - 127.0.0.1 - - [27/Jul/2025 21:47:43] "GET / HTTP/1.1" 200 -
+2025-07-27 21:47:57,343 - INFO - Loading vector store for context
+2025-07-27 21:47:57,344 - INFO - Intializing our Huggingface embedding model
+2025-07-27 21:48:02,220 - INFO - Use pytorch device_name: cpu
+2025-07-27 21:48:02,220 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-27 21:48:06,704 - INFO - Huggingface embedding model loaded sucesfully....
+2025-07-27 21:48:06,704 - INFO - Loading existing vectorstore...
+2025-07-27 21:48:06,706 - INFO - Loading faiss.
+2025-07-27 21:48:06,725 - INFO - Successfully loaded faiss.
+2025-07-27 21:48:06,730 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-07-27 21:48:06,779 - INFO - Loading LLM from HuggingFace
+2025-07-27 21:48:06,874 - INFO - LLM loaded sucesfully...
+2025-07-27 21:48:06,875 - INFO - Sucesfully created the QA chain
+2025-07-27 21:48:08,403 - INFO - 127.0.0.1 - - [27/Jul/2025 21:48:08] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-27 21:48:08,408 - INFO - 127.0.0.1 - - [27/Jul/2025 21:48:08] "GET / HTTP/1.1" 200 -
